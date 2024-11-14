@@ -2,7 +2,7 @@
  * @name Spotify Discord
  * @version 2.0.0
  * @description Combine Discord and Spotify into one
- * @author CapnKitten
+ * @author CapnKitten + MrBiscuit
  *
  * @website http://github.com/CapnKitten
  * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Spotify-Discord/css/source.css
@@ -85,7 +85,8 @@
     --main-textarea-text-color: hsl(0,0%,60%);
     --main-textarea-placeholder-color: hsl(0,0%,54%);
     --main-textarea-typing-color: hsla(0,0%,7%,0.9);
-
+    --main-textarea-radius: 10px;
+    
     /* MESSAGE SETTINGS */
     --message-color-hover: hsl(0,0%,9%);
 
@@ -94,9 +95,47 @@
 	--slider-background: hsl(0,0%,26%);
 
     /* SCROLLBAR SETTINGS */
-    --scrollbar-width: 8px;
-    --scrollbar-color: hsl(0,0%,35%);
+    --scrollbar-width: 8px; 
+    --scrollbar-color: hsl(0,0%,35%); 
     --scrollbar-hover-color: hsl(0,0%,49%);
-    --scrollbar-active-color: hsl(0,0%,58%);
+    --scrollbar-active-color: hsl(0,0%,58%); 
     --scrollbar-radius: 18px;
+}
+/* makes the members list span the whole screen without header + thread, modview, etc other sidebars*/
+.searchResultsWrap_c2b47d, .guildSidebar_a7d72e {
+    background-color: var(--app-foreground);
+    height: calc(100% + 65px);
+    border-radius: 10px;
+    max-height: none;
+    margin: var(--app-card-top-margin) var(--app-card-margin) 0;
+}
+
+.outer_c69a7b, .chat_a7d72e:has(>.container_fc4f04), .chat_a7d72e:has(.forumOrHome_ff5f90 ) {
+    height: calc(100%);
+    border-radius: 10px;
+    max-height: none;
+}
+/*channel name*/
+ .subtitleContainer_a7d72e { 
+    margin-bottom: var(--app-card-margin);
+    background-color: #303336;
+    border-radius: 10px;
+    width: 100%;
+}
+/* chat box */
+.chatContent_a7d72e {
+    background-color: #303336;
+    border-radius: 10px;
+}
+/* container with chatbox, member list, channel name */
+.chat_a7d72e { 
+    background-color:  transparent !important;
+}
+/*member list*/
+.container_cbd271{
+    background-color: #303336;
+    margin-left: var(--app-card-margin);
+    height: calc(100% + 65px);
+    border-radius: 10px;
+    max-height: none;
 }
