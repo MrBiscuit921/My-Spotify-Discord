@@ -29,6 +29,7 @@
     /* HEADER BAR SETTINGS */
     --header-bar-height: 56px;
     --header-bar-color: ;
+    --header-bar-radius: 10px;
 
     /* ACCENT HSL AND TEXT COLOR SETTINGS */
     --accent-hue: 213;
