@@ -315,7 +315,7 @@ body:not(:has(:is(.container_6sXIoE, #vc-spotify-player))) .wrapper_ef3116 {
 }
 
 .role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   background-color: inherit;
@@ -326,4 +326,8 @@ body:not(:has(:is(.container_6sXIoE, #vc-spotify-player))) .wrapper_ef3116 {
   border-radius: var(--radius-xs);
   filter: brightness(1.1);
   opacity: 0.25;
+}
+
+.content__37e49 {
+  background-color: var(--app-foreground);
 }
