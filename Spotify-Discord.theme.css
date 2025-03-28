@@ -331,3 +331,7 @@ body:not(:has(:is(.container_6sXIoE, #vc-spotify-player))) .wrapper_ef3116 {
 .content__37e49 {
   background-color: var(--app-foreground);
 }
+
+.base_b88801 {
+  bottom: -8px;
+}
