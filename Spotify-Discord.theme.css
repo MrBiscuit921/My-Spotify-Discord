@@ -335,3 +335,8 @@ body:not(:has(:is(.container_6sXIoE, #vc-spotify-player))) .wrapper_ef3116 {
 .base_b88801 {
   bottom: -8px;
 }
+
+.container__5aa3a,
+.tiles__5aa3a {
+  justify-content: center;
+}
